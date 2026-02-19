@@ -1,0 +1,202 @@
+{
+  "info": {
+    "name": "SMC Safety System API",
+    "description": "Solapur Municipal Corporation - Smart Safety & Assistance System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/health",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "health"]
+        }
+      }
+    },
+    {
+      "name": "Worker Check-in (North Zone)",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"workerId\": \"W001\",\n  \"name\": \"Ramesh Patil\",\n  \"lat\": 17.6799,\n  \"lng\": 75.9088,\n  \"lang\": \"mr\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/workers/checkin",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "workers", "checkin"]
+        }
+      }
+    },
+    {
+      "name": "Get All Workers",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/workers/all",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "workers", "all"]
+        }
+      }
+    },
+    {
+      "name": "Trigger Manual SOS",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"workerId\": \"W001\",\n  \"lat\": 17.6799,\n  \"lng\": 75.9088,\n  \"mode\": \"manual\",\n  \"lang\": \"en\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/sos/trigger",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "sos", "trigger"]
+        }
+      }
+    },
+    {
+      "name": "Trigger Voice SOS",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"workerId\": \"W002\",\n  \"lat\": 17.6550,\n  \"lng\": 75.9000,\n  \"mode\": \"voice\",\n  \"voiceText\": \"madad madat help\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/sos/trigger",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "sos", "trigger"]
+        }
+      }
+    },
+    {
+      "name": "Get Recent SOS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/sos/recent?limit=10",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "sos", "recent"],
+          "query": [{"key": "limit", "value": "10"}]
+        }
+      }
+    },
+    {
+      "name": "Get All Drainage Assets",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/drainage/all",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "drainage", "all"]
+        }
+      }
+    },
+    {
+      "name": "Add Drainage Asset",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"type\": \"manhole\",\n  \"lat\": 17.6650,\n  \"lng\": 75.9000,\n  \"name\": \"Manhole-Test-001\",\n  \"description\": \"Test manhole for demo\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/drainage/add",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "drainage", "add"]
+        }
+      }
+    },
+    {
+      "name": "Get Nearby Assets",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/drainage/nearby?lat=17.67&lng=75.90&limit=5",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "drainage", "nearby"],
+          "query": [
+            {"key": "lat", "value": "17.67"},
+            {"key": "lng", "value": "75.90"},
+            {"key": "limit", "value": "5"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Zones",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/zones",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "zones"]
+        }
+      }
+    },
+    {
+      "name": "Dashboard Summary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/dashboard/summary",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "dashboard", "summary"]
+        }
+      }
+    },
+    {
+      "name": "Chatbot - Worker Status",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"show worker status\",\n  \"lang\": \"en\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/chatbot/query",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "chatbot", "query"]
+        }
+      }
+    },
+    {
+      "name": "Chatbot - Emergency Procedure",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"query\": \"what to do in emergency\",\n  \"lang\": \"hi\"\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/chatbot/query",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "chatbot", "query"]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "zones": [
+    {
+      "zoneId": "ZONE-001",
+      "name": "North Solapur",
+      "bounds": {
+        "minLat": 17.67,
+        "maxLat": 17.70,
+        "minLng": 75.88,
+        "maxLng": 75.93
+      },
+      "riskLevel": "HIGH",
+      "color": "#FF6B6B",
+      "description": "High-risk industrial area with older sewage infrastructure",
+      "landmarks": ["Siddheshwar Temple", "Railway Station", "MIDC Area"],
+      "supervisors": ["Supervisor-001", "Supervisor-002"],
+      "workerCount": 0,
+      "activeAlerts": 0
+    },
+    {
+      "zoneId": "ZONE-002",
+      "name": "Central Solapur",
+      "bounds": {
+        "minLat": 17.64,
+        "maxLat": 17.67,
+        "minLng": 75.88,
+        "maxLng": 75.93
+      },
+      "riskLevel": "MEDIUM",
+      "color": "#FFD93D",
+      "description": "Commercial area with moderate sewage activity",
+      "landmarks": ["Hutatma Chowk", "Budhwar Peth", "City Market"],
+      "supervisors": ["Supervisor-003", "Supervisor-004"],
+      "workerCount": 0,
+      "activeAlerts": 0
+    },
+    {
+      "zoneId": "ZONE-003",
+      "name": "South Solapur",
+      "bounds": {
+        "minLat": 17.61,
+        "maxLat": 17.64,
+        "minLng": 75.88,
+        "maxLng": 75.93
+      },
+      "riskLevel": "LOW",
+      "color": "#6BCB77",
+      "description": "Residential area with newer infrastructure",
+      "landmarks": ["South City Mall", "Jule Solapur", "University Campus"],
+      "supervisors": ["Supervisor-005"],
+      "workerCount": 0,
+      "activeAlerts": 0
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "municipal_data": {
+    "city": "Solapur",
+    "state": "Maharashtra",
+    "country": "India",
+    "population": 1000000,
+    "area_sq_km": 142,
+    "sanitation_workforce": 850,
+    "active_zones": 3
+  },
+  "industry_statistics": {
+    "textile_units": 120,
+    "manufacturing_units": 85,
+    "commercial_areas": 45,
+    "residential_zones": 78,
+    "industrial_risk_score": 7.5
+  },
+  "worker_demographics": {
+    "total_workers": 850,
+    "male": 720,
+    "female": 130,
+    "age_groups": {
+      "18-25": 150,
+      "26-35": 320,
+      "36-45": 280,
+      "46-60": 100
+    },
+    "education_levels": {
+      "primary": 420,
+      "secondary": 310,
+      "higher_secondary": 120
+    }
+  },
+  "safety_metrics": {
+    "incidents_last_year": 47,
+    "sos_calls_last_month": 12,
+    "average_response_time_minutes": 8.5,
+    "safety_training_completion": 78,
+    "equipment_availability": 92
+  },
+  "infrastructure_data": {
+    "manholes": 1250,
+    "drainage_lines_km": 385,
+    "sewer_lines_km": 420,
+    "pumping_stations": 18,
+    "treatment_plants": 3
+  },
+  "risk_zones_breakdown": {
+    "high_risk_percentage": 25,
+    "medium_risk_percentage": 45,
+    "low_risk_percentage": 30
+  },
+  "solapur_specific": {
+    "textile_industry_impact": "HIGH",
+    "water_scarcity_factor": "MODERATE",
+    "monsoon_flooding_risk": "HIGH",
+    "heritage_area_restrictions": true,
+    "smart_city_initiatives": ["IoT Sensors", "GPS Tracking", "Real-time Monitoring"]
+  }
+}
