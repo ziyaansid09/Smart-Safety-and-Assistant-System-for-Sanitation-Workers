@@ -1,0 +1,23 @@
+*) Targetted Areas
+1.construction 
+2.Leather Industy Work 
+3.Mining 
+4.Tobacco indusrty 
+5.textile and handloom 
+*)API Links & Datasets
+0)https://www.kaggle.com/code/jijagallery/skills-landscape-analysis-in-job-market#Analyze_Missing_Values 
+https://www.data.gov.in/catalog/demographic-profile-solapur-city https://www.data.gov.in/catalog/waste-collection-vehicle-data-solapur 
+https://www.data.gov.in/resource/district-wise-demographic-data-unorganised-workers-registered-eshram-previous-day",solapurcorporation.gov.in/smc/dataset_marathi. 
+1) Solapur Municipal Corporation datasets (Marathi portal index)
+https://solapurcorporation.gov.in/smc/dataset_marathi
+2) Maharashtra Urban Local Bodies “Know Your Ward” (interactive ward lookup / civic boundaries)
+https://mahaulb.in/know-your-ward/
+3) Google Maps (Solapur city view)
+https://www.google.com/maps/place/Solapur
+4) ISRO/NRSC Bhuvan (Indian map + satellite-style layers)
+https://bhuvan.nrsc.gov.in/,5) Overpass Turbo (to query drains/manholes around Solapur and export GeoJSON)
+https://overpass-turbo.eu/
+6) Solapur demographic profile (data.gov.in catalog)
+https://www.data.gov.in/catalog/demographic-profile-solapur-city
+7) Solapur waste collection vehicle dataset (data.gov.in catalog)
+https://www.data.gov.in/catalog/waste-collection-vehicle-data-solapur
