@@ -500,4 +500,3 @@ For issues or questions:
 
 **Built with ❤️ for Solapur Municipal Corporation**
 
-**Good luck with your hackathon! 🏆**
