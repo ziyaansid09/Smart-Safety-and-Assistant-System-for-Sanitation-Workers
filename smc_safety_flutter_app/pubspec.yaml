@@ -1,0 +1,38 @@
+name: smc_safety_flutter_app
+description: SMC Smart Safety Platform - Flutter Frontend for Solapur Municipal Corporation
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.18.1
+  google_maps_flutter: ^2.5.0
+  geolocator: ^10.1.0
+  speech_to_text: ^6.3.0
+  dio: ^5.3.3
+  provider: ^6.1.1
+  fl_chart: ^0.64.0
+  url_launcher: ^6.2.1
+  connectivity_plus: ^5.0.2
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
